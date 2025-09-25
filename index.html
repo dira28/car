@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transportasi</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Mobil Keren Masa Kini</h1>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#features">Fitur Mobil</a>
+          <a href="#contact">Kontak</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="home">
+      <h2>Pilih Mobil Masa Depan Anda</h2>
+      <p>
+        Berikut adalah tiga jenis mobil dengan fitur canggih yang dapat Anda
+        pilih:
+      </p>
+      <div class="car-description">
+        <div class="car">
+          <img src="Asset2/mobil sport.jpg" alt="Mobil Sport" />
+          <h3>Mobil Sport</h3>
+          <p>
+            Mobil dengan kecepatan tinggi dan desain aerodinamis. Ideal untuk
+            Anda yang suka tantangan dan kecepatan.
+          </p>
+        </div>
+        <div class="car">
+          <img src="Asset2/listrik mobil.jpg" alt="Mobil Listrik" />
+          <h3>Mobil Listrik</h3>
+          <p>
+            Mobil ramah lingkungan yang menggunakan tenaga listrik. Cocok untuk
+            perjalanan jarak jauh dengan efisiensi energi tinggi.
+          </p>
+        </div>
+        <div class="car">
+          <img src="Asset2/mobil suv.png" alt="SUV Tangguh" />
+          <h3>SUV Tangguh</h3>
+          <p>
+            Mobil dengan daya jelajah yang kuat, cocok untuk berbagai medan dan
+            memberikan kenyamanan untuk keluarga.
+          </p>
+        </div>
+      </div>
+      <button onclick="showForm()">Pilih Mobil dan Fitur</button>
+
+      <!-- Pilihan Mobil -->
+      <section id="form-section" style="display: none">
+        <h2>Pilih Mobil dan Fitur</h2>
+        <form id="carForm">
+          <label for="car">Pilih Mobil:</label>
+          <select id="car" name="car">
+            <option value="electric">Mobil Listrik</option>
+            <option value="sports">Mobil Sport</option>
+            <option value="suv">SUV Tangguh</option>
+          </select>
+
+          <label for="feature">Nilai Fitur Mobil:</label>
+          <select id="feature" name="feature">
+            <option value="high">Sangat Canggih</option>
+            <option value="medium">Cukup Canggih</option>
+            <option value="low">Kurang Canggih</option>
+          </select>
+
+          <button type="button" onclick="showResult()">Tampilkan Hasil</button>
+        </form>
+      </section>
+    </section>
+
+    <section id="result-section" style="display: none">
+      <h2>Hasil Penilaian Mobil</h2>
+      <div id="result"></div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <h2>Mobil Keren Masa Kini</h2>
+        <div class="feature">
+          <img src="Asset2/mobillistrik.jpg" alt="Mobil Listrik" />
+          <div class="feature-text">
+            <h3>Mobil Listrik Masa Depan</h3>
+            <p>
+              Mobil listrik dengan performa tinggi, menggunakan tenaga ramah
+              lingkungan yang dapat mengurangi polusi udara. Dilengkapi dengan
+              berbagai fitur teknologi terbaru, termasuk sistem pengisian cepat
+              dan efisiensi energi.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="Asset2/mobilsport.jpg" alt="Mobil Sport" />
+          <div class="feature-text">
+            <h3>Mobil Sport Berkecepatan Tinggi</h3>
+            <p>
+              Desain aerodinamis dengan kecepatan tinggi, mobil sport ini
+              menawarkan sensasi berkendara yang luar biasa dengan teknologi
+              mesin terbaru dan handling yang luar biasa.
+            </p>
+          </div>
+        </div>
+        <div class="feature">
+          <img src="Asset2/mobil suv2.jpg" alt="MobilSUV" />
+          <div class="feature-text">
+            <h3>SUV Tangguh Untuk Petualangan</h3>
+            <p>
+              Dikenal dengan kapasitasnya yang besar dan kemampuan bertahan di
+              medan berat. SUV ini adalah pilihan sempurna untuk perjalanan jauh
+              atau medan yang tidak rata.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Kontak Kami</h2>
+      <p>Hubungi kami melalui informasi kontak berikut:</p>
+
+      <div class="contact-info">
+        <div>
+          <h3>Alamat</h3>
+          <p>Jl. Teknologi No. 10, Jakarta</p>
+        </div>
+        <div>
+          <h3>Telepon</h3>
+          <p>(+62) 856947682843</p>
+        </div>
+        <div>
+          <h3>Email</h3>
+          <p>info@mobilkeren.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; Dira Mayzaro Dekantari</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

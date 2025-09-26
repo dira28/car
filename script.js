@@ -45,7 +45,7 @@ function showResult() {
         break;
     }
 
-    result.innerHTML = `<p>Anda memilih <b>${carText}</b> dengan fitur. <b></p>`;
+    result.innerHTML = `<p>Anda memilih <b>${carText}</b> dengan fitur <b>${featureText}</b>. <b></p>`;
     resultSection.style.display = "block";
     window.scrollTo(0, resultSection.offsetTop);
   } else {
